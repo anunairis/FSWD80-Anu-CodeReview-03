@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  /*------HEADER------*/
+  /*------NAV BAR------*/
+  /*------CONTENT------*/
+  /*-------tTHE TWO CLAIM BOXES------*/
+  /*---------FOOTER---------*/ }
+  body header {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    width: 100%;
+    padding: 0 2.5% 0 2.5%;
+    box-sizing: border-box;
+    background-color: #FFF3F3; }
+    body header .logo {
+      display: flex;
+      flex: 0 60%; }
+      body header .logo img {
+        width: 20vw;
+        height: auto; }
+    body header .banner {
+      display: flex;
+      flex: 0 20%; }
+      body header .banner img {
+        margin-right: auto;
+        width: 48vw;
+        height: 88px; }
+  body nav {
+    width: 100%;
+    background-color: #8E1616; }
+    body nav ul {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      width: 95%;
+      margin: 0 2.5%; }
+      body nav ul li {
+        font-weight: bold;
+        padding: 5px 0;
+        list-style-type: none; }
+        body nav ul li a {
+          padding-right: 20px;
+          text-decoration: none;
+          color: black;
+          font-size: 1.4em; }
+  body #content {
+    width: 100%;
+    margin: auto;
+    /*-------UNCOMPLICATING - TEXT------*/ }
+    body #content .traffic {
+      background-image: url("img/traffic.jpg");
+      height: 800px;
+      width: 100%;
+      background-size: cover;
+      background-position: 90% 0%;
+      background-repeat: no-repeat;
+      position: relative; }
+      body #content .traffic h1 {
+        color: white;
+        margin: 0 5%;
+        padding: 40px 0 30px 0;
+        font-size: 2em; }
+      body #content .traffic .coverage {
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 86%;
+        height: 750px;
+        margin: auto;
+        border: 2px solid gray;
+        box-sizing: border-box;
+        position: absolute;
+        top: 12%;
+        right: 0;
+        left: 0;
+        /*------FORM STYLING------*/ }
+        body #content .traffic .coverage .great {
+          display: flex;
+          flex-wrap: wrap;
+          width: 535px;
+          margin: auto;
+          height: 250px;
+          align-self: center; }
+          body #content .traffic .coverage .great p {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-align: center; }
+        body #content .traffic .coverage #form {
+          width: 50vw;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          /*------BUTTON INPUT------*/ }
+          body #content .traffic .coverage #form .name, body #content .traffic .coverage #form .age, body #content .traffic .coverage #form .country, body #content .traffic .coverage #form .horse {
+            flex: 0 40%;
+            margin: 8px 0px;
+            width: 100%;
+            margin-bottom: 20px; }
+            body #content .traffic .coverage #form .name label, body #content .traffic .coverage #form .age label, body #content .traffic .coverage #form .country label, body #content .traffic .coverage #form .horse label {
+              display: block;
+              text-align: left;
+              font-size: 1.4em;
+              font-weight: bold; }
+            body #content .traffic .coverage #form .name input, body #content .traffic .coverage #form .age input, body #content .traffic .coverage #form .country input, body #content .traffic .coverage #form .horse input {
+              width: 100%;
+              height: 30px;
+              background-color: white; }
+            body #content .traffic .coverage #form .name select, body #content .traffic .coverage #form .age select, body #content .traffic .coverage #form .country select, body #content .traffic .coverage #form .horse select {
+              width: 100%;
+              height: 36px;
+              background-color: white; }
+          body #content .traffic .coverage #form .name, body #content .traffic .coverage #form .country {
+            margin-right: 10%; }
+          body #content .traffic .coverage #form .age, body #content .traffic .coverage #form .horse {
+            margin-left: 10%; }
+          body #content .traffic .coverage #form .button {
+            margin-top: 20px;
+            display: flex;
+            flex: 100%; }
+            body #content .traffic .coverage #form .button input {
+              height: 60px;
+              width: 200px;
+              border-radius: 20px;
+              background-color: #339235;
+              margin: auto;
+              border: 0;
+              color: white;
+              font-weight: bold;
+              font-size: 1.5em;
+              margin-bottom: 70px; }
+          body #content .traffic .coverage #form .output {
+            height: 60px;
+            width: 200px;
+            border-radius: 20px;
+            margin: auto;
+            border: 2px solid #339235; }
+    body #content .uncomplicating {
+      background-color: #CECECE;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height: 250px;
+      justify-content: center;
+      margin-bottom: 100px; }
+      body #content .uncomplicating .uncomp {
+        width: 100%;
+        padding-top: 50px;
+        font-weight: bold;
+        align-self: center;
+        font-size: 3em;
+        margin: 0;
+        text-align: center; }
+      body #content .uncomplicating .uncomp1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 10px; }
+        body #content .uncomplicating .uncomp1 p {
+          padding: 5px; }
+  body .two_divs {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body .two_divs .benefits, body .two_divs .earned_benefits {
+      height: 400px;
+      width: 500px;
+      border: 2px solid gray;
+      border-top: 2px solid black;
+      box-shadow: 0 3px 4px 5px #888888;
+      padding: -2.5%;
+      flex: 0 42%; }
+      body .two_divs .benefits .span, body .two_divs .earned_benefits .span {
+        color: blue;
+        font-size: 1.8em; }
+      body .two_divs .benefits .span_list, body .two_divs .earned_benefits .span_list {
+        font-size: 1.4em; }
+      body .two_divs .benefits li, body .two_divs .earned_benefits li {
+        list-style-type: none;
+        padding: 10px; }
+      body .two_divs .benefits .to_get_the_padding, body .two_divs .earned_benefits .to_get_the_padding {
+        padding: 40px 50px 0 40px; }
+  body footer {
+    box-sizing: border-box;
+    padding: 0 2.5% 0 2.5%;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0;
+    background-color: black;
+    height: 170px; }
+    body footer ul {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      width: 95%; }
+      body footer ul li {
+        font-weight: bold;
+        padding: 5px 0; }
+        body footer ul li a {
+          padding-right: 20px;
+          text-decoration: none;
+          color: white;
+          font-size: 1.4em; }
+    body footer .header_image {
+      width: 100%;
+      text-align: right; }
+      body footer .header_image img {
+        height: 50px; }
+    body footer p {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px auto; }
+
+/*# sourceMappingURL=scss_codeReview3.css.map */
