@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Our team</title>
+	<style>
+body {
+	margin: 0;
+}
+header {
+	display: flex;
+	height: 120px;
+	align-items: center;
+	width: 100%;
+	padding: 0 2.5% 0 2.5%;
+	box-sizing: border-box;
+	background-color: #FFF3F3; }
+	header .logo {
+   	display: flex;
+   	flex: 0 60%; }
+   	header .logo img {
+   	width: 20vw;
+   	height: auto; }
+	header .banner {
+	display: flex;
+	flex: 0 20%; }
+	header .banner img {
+    margin-right: auto;
+    width: 48vw;
+    height: 88px; }
+h1 {
+	margin: 2%;}
+#container1, #container2 {
+	display: flex;
+	flex-direction: row;}
+	#container1 img, #container2 img {
+		height: 350px;
+		width: 350px;
+		margin: 2%;}
+.text1, .text2 {
+	margin: 2%;}
+.text1 li, .text2 li {
+	padding: 10px;
+	font-size: 1.5em}
+
+
+</style>
+
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="codeReview3.html">
+				<img src="./img/logo.png" alt="Continue to main page"></a>
+		</div>
+		
+
+		<div class="banner">
+			<a href="https://www.codefactory.wien">
+				<img src="./img/banner.png" alt=""></a>
+		</div>
+	</header>
+
+		<h1>Employees</h1>
+
+	<div id="container1">
+		<img src="img/image1.jpg" alt="">
+			<nav class="text1">
+				<ul>
+					<li>Title: <span id="title1"></span></li>
+					<li id="name1">Name:</li>
+					<li id="email1">Email:</li>
+					<li id="phone1">Phone:</li>
+				</ul>
+			</nav>
+	</div>
+	<div id="container2">	
+		<img src="img/image2.jpg" alt="" style="margin-top: 20px">
+			<nav class="text2">
+				<ul>
+					<li>Title: <span id="title2"></span></li>
+					<li id="name2">Name:</li>
+					<li id="email2">Email:</li>
+					<li id="phone2">Phone:</li>
+				</ul>
+			</nav>
+	</div>
+
+	<script src="json_codeReview3.json" type="text/javascript"></script>
+	<script>
+		// For person 1
+		const employeesJs = employees;
+		document.getElementById("title1").innerHTML = employeesJs[0].title;
+		document.getElementById("name1").innerHTML = employeesJs[0].name;
+		document.getElementById("email1").innerHTML = employeesJs[0].email;
+		document.getElementById("phone1").innerHTML = employeesJs[0].phone;
+		// For person 2
+		document.getElementById("title2").innerHTML = employeesJs[1].title;
+		document.getElementById("name2").innerHTML = employeesJs[1].name;
+		document.getElementById("email2").innerHTML = employeesJs[1].email;
+		document.getElementById("phone2").innerHTML = employeesJs[1].phone;
+
+
+	</script>
+</body>
+</html>

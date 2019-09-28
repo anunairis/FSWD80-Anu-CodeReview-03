@@ -76,14 +76,15 @@ body {
         body #content .traffic .coverage .great {
           display: flex;
           flex-wrap: wrap;
-          width: 535px;
-          margin: auto;
-          height: 250px;
-          align-self: center; }
+          height: 250px; }
           body #content .traffic .coverage .great p {
             font-size: 3.5em;
             font-weight: bold;
-            text-align: center; }
+            text-align: center;
+            margin: auto; }
+            @media only screen and (max-width: 600px) {
+              body #content .traffic .coverage .great p {
+                font-size: 2.5em; } }
         body #content .traffic .coverage #form {
           width: 50vw;
           margin: auto;
@@ -91,6 +92,9 @@ body {
           flex-wrap: wrap;
           text-align: center;
           /*------BUTTON INPUT------*/ }
+          @media only screen and (max-width: 700px) {
+            body #content .traffic .coverage #form {
+              flex-direction: column; } }
           body #content .traffic .coverage #form .name, body #content .traffic .coverage #form .age, body #content .traffic .coverage #form .country, body #content .traffic .coverage #form .horse {
             flex: 0 40%;
             margin: 8px 0px;
@@ -113,11 +117,15 @@ body {
             margin-right: 10%; }
           body #content .traffic .coverage #form .age, body #content .traffic .coverage #form .horse {
             margin-left: 10%; }
+            @media only screen and (max-width: 700px) {
+              body #content .traffic .coverage #form .age, body #content .traffic .coverage #form .horse {
+                margin-left: 0; } }
           body #content .traffic .coverage #form .button {
             margin-top: 20px;
             display: flex;
-            flex: 100%; }
-            body #content .traffic .coverage #form .button input {
+            flex: 100%;
+            width: 100%; }
+            body #content .traffic .coverage #form .button #button1 {
               height: 60px;
               width: 200px;
               border-radius: 20px;
@@ -128,12 +136,13 @@ body {
               font-weight: bold;
               font-size: 1.5em;
               margin-bottom: 70px; }
-          body #content .traffic .coverage #form .output {
-            height: 60px;
-            width: 200px;
+          body #content .traffic .coverage #form #button_output {
             border-radius: 20px;
             margin: auto;
-            border: 2px solid #339235; }
+            border: 2px solid #339235;
+            display: none;
+            align-self: center;
+            align-items: center; }
     body #content .uncomplicating {
       background-color: #CECECE;
       width: 100%;
@@ -143,6 +152,9 @@ body {
       height: 250px;
       justify-content: center;
       margin-bottom: 100px; }
+      @media only screen and (max-width: 700px) {
+        body #content .uncomplicating {
+          height: 300px; } }
       body #content .uncomplicating .uncomp {
         width: 100%;
         padding-top: 50px;
@@ -151,10 +163,16 @@ body {
         font-size: 3em;
         margin: 0;
         text-align: center; }
+        @media only screen and (max-width: 700px) {
+          body #content .uncomplicating .uncomp {
+            padding-top: 180px; } }
       body #content .uncomplicating .uncomp1 {
         font-size: 1.5em;
         text-align: center;
         margin-top: 10px; }
+        @media only screen and (max-width: 700px) {
+          body #content .uncomplicating .uncomp1 {
+            display: none; } }
         body #content .uncomplicating .uncomp1 p {
           padding: 5px; }
   body .two_divs {
@@ -164,7 +182,6 @@ body {
     flex-direction: row;
     justify-content: space-between; }
     body .two_divs .benefits, body .two_divs .earned_benefits {
-      height: 400px;
       width: 500px;
       border: 2px solid gray;
       border-top: 2px solid black;
@@ -180,7 +197,7 @@ body {
         list-style-type: none;
         padding: 10px; }
       body .two_divs .benefits .to_get_the_padding, body .two_divs .earned_benefits .to_get_the_padding {
-        padding: 40px 50px 0 40px; }
+        padding: 40px 50px; }
   body footer {
     box-sizing: border-box;
     padding: 0 2.5% 0 2.5%;

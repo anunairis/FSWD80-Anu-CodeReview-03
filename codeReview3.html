@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Insurance from one place!</title>
 	<link rel="stylesheet" type="text/css" href="scss_codeReview3.css">
+	
+	<script src="json_codeReview3.json" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 					<!---------------HEADER------------->
@@ -24,7 +26,7 @@
 		<ul>
 			<li><a href="" title="">Home</li>
 			</a>
-			<li><a href="" title="">Team</li>
+			<li><a href="team.html" title="">Team</li>
 			</a>
 		</ul>
 	</nav>
@@ -40,7 +42,7 @@
 			</div>
 
 					<!--------------INPUT TYPES----------->
-				<form id="form" action="codeReview3_submit" method="get" accept-charset="utf-8">
+				<form id="form" action="codeReview3_submit" accept-charset="utf-8">
 
 					<div class="name">
 						<label for="name">Your name:</label> 
@@ -54,7 +56,7 @@
 
 					<div class="country">
 					<label>Country: </label>
-						<select name="country1" size="1" required>
+						<select id="country1" name="country1" size="1" required>
 						<option value="austria">Austria</option>
 						<option value="hungary">Hungary</option>
 						<option value="greece">Greece</option>
@@ -70,10 +72,10 @@
 					<!------------BUTTON----------->
 
 					<div class="button">
-					<input type="button" value="Calculate" onclick="msg()">
+					<input id="button1" type="button" value="Calculate"></input>
 					</div>
 
-					<div class="output">
+					<div id="button_output">
 						<span></span>
 					</div>
 					 <!-- <output name="" for=""></output> -->
@@ -105,7 +107,7 @@
 
 		<div class="earned_benefits">
 			<div class="to_get_the_padding">
-					<span class="span">Add-on protection & coverage</span><br>	
+					<span class="span">Add-on protection</span><br>	
 					<span class="span_list">For more peace of mind
 					<ul>
 					<li>&#10004; Better Car Replacement</li>
@@ -118,16 +120,11 @@
 
 		</div>
 	</div>
-
-
-
-
-
-
+	
 	<footer>
 		<ul>
-			<li><a href="codeReview2.html" title="Takes you to home page">Home</a></li>
-			<li><a href="" title="Tech news">Team</a></li>
+			<li><a href="codeReview3.html" title="Takes you to home page">Home</a></li>
+			<li><a href="team.html" title="Our team">Team</a></li>
 		</ul>
 
 		<div class="header_image">
@@ -137,15 +134,8 @@
 
 		<p>Anu - CodeFactory 2019</p>
 	</footer>
-
-		
-
-
-
-
-
-
 	</div>
 
+<script src="js_codeReview3.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

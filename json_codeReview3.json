@@ -1,0 +1,15 @@
+  // NOT A VALID JSONAS
+  var employees = [
+   {
+   "title": "Lead Project Manager",
+   "name": "Sophia Sabat",
+   "email": "sophia@gmail.com",
+   "phone": "+ 0 67 55432112"
+   },
+    {
+   "title": "Customer Service Representitive",
+   "name": "Patricia Peters",
+   "email": "pat@gmail.com",
+   "phone": "+0 67 43573212",
+   }
+ ];
